@@ -378,7 +378,7 @@ hr{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     background:rgba(0, 0, 0, 0.445);
@@ -487,6 +487,7 @@ hr{
     justify-content: space-around;
     align-items: center;
 }
+
 .formInput {
     width: 100%;
     height: 2.5em;
@@ -512,6 +513,23 @@ hr{
     border-bottom: rgba(255, 255, 255, .3) solid 2px;
     resize:none;
 
+}
+.formText,
+.formInput:focus{
+    border-bottom: 2px solid #4ce0d2;
+}
+.btnForm{
+    padding: 1em 3em;
+    border: rgba(255, 255, 255, .3) solid 2px;
+    outline: none;
+    background-color: #121314;
+    color: #fff;
+    width: 100%;
+    margin: .5em;
+}
+
+.btnForm:hover{
+    border: solid 2px #4ce0d2;
 }
 .imgForm{
     padding: 1em;
