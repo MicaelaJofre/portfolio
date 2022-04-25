@@ -26,7 +26,7 @@ const proyects = [
         linkWeb: 'https://micaelajofre.github.io/ecommercejofre/'
     },
     {
-        img: './img/coder2.jpg',
+        img: './video/evento.gif',
         title: 'Dreamed Day',
         text: 'Sitio web creado para que el usuario pueda manejar una agenda de su boda. El sito consta de un registro de usurio y una agenda personalizada con cuatro secciones donde podrá manejar la lista de invitados, el presupuesto, una lista de tareas pendientes y proveedores. El proyecto fue desarrollado con <span class="spanTI">HTML, Sass, JavaScript vanilla y JQuery.</span>',
         linkGitHub: 'https://github.com/MicaelaJofre/Eventos',
