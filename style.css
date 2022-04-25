@@ -179,7 +179,7 @@ span {
 
 .hero{
     width: 100%;
-    height: 85vh;
+    height: 95vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -328,8 +328,9 @@ hr{
 .containerProyect {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1em;
     align-items: center;
-    /* padding-top: 5em; */
     height: 50vh;
 }
 .proyect{
@@ -343,7 +344,7 @@ hr{
     border: solid 5px rgba(0, 0, 0, 0.289);
 }
 .proyect img{
-    width: 25em;
+    max-width: 25em;
     height: auto;
 }
 
@@ -470,7 +471,8 @@ hr{
 }
 .socialNetwork {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(35px, 20%));
+    grid-template-columns: repeat(auto-fill, minmax(15em, 20%));
+    flex-wrap: wrap;
     justify-content: center;
     gap: 1em;
 }
@@ -491,22 +493,27 @@ hr{
 }
 
 .containerForm{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 45%));
-    justify-content: space-around;
-    align-items: center;
+    background-image: url(./img/explocion.png);
+    background-size: 75em;
+    background-position: 17em 50%;
+    background-repeat: no-repeat;
 }
-
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 50%;
+}
 .formInput {
     width: 100%;
     height: 2.5em;
     margin: .5em;
-    padding-left: 1em;
-    background: #222;
+    background: transparent;
     color: #fff;
+    font-weight: 600;
     border: none;
     outline: none;
-    border-bottom: rgba(255, 255, 255, .3) solid 2px;
+    border-bottom: rgba(255, 255, 255, .3) solid 1px;
 
 }
 .formText{
@@ -514,14 +521,13 @@ hr{
     height: 15em;
     margin: .5em;
     margin-top: .5em;
-    background: #222;
-    padding: 1em;
+    background: transparent;
     color: #fff;
+    font-weight: 600;
     border: none;
     outline: none;
-    border-bottom: rgba(255, 255, 255, .3) solid 2px;
+    border-bottom: rgba(255, 255, 255, .3) solid 1px;
     resize:none;
-
 }
 .formText:focus,
 .formInput:focus{
@@ -541,9 +547,28 @@ hr{
     border: solid 2px #4ce0d2;
 }
 .imgForm{
-    padding: 1em;
-    border: rgba(255, 255, 255, .3) solid 2px;
+    width: 50vw;
+    height: 40em;
 }
+
+/*footer*/
+.containerFooter{
+    padding: 2em;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 2em;
+}
+.titleFooter{
+    font-weight: 200;
+}
+.hrFooter{
+    margin: 2em 0;
+}
+
 
 /*media query*/
 
@@ -578,7 +603,6 @@ hr{
 
     .menu:hover .spacer:before {
         width: 10%;
-        ;
     }
     .imgTec div {
         font-size: .5em;
@@ -589,10 +613,19 @@ hr{
         padding: 3em 1em;
     }
     .serviceDiv {
-        height: 55vh;
+        height: 35vh;
     }
     .itemServ {
         margin-top: 1em;
+    }
+    .form {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 810px){
+
+    .containerSocial{
+        margin-top: 25em;
     }
 }
 
@@ -688,7 +721,19 @@ hr{
         width: 100%;
     }
     .serviceDiv {
-        height: 55vh;
+        height: 35vh;
+    }
+    .socialNetwork{
+        margin-bottom: 2em;
+    }
+    .containerForm {
+        background-position: -10em 50%;
+    }
+    .titleFooter {
+        order: 2;
+        padding: 1em 0;
+        font-size: .8em;
+        text-align: center;
     }
 }
 @media screen and (max-width: 600px){
@@ -733,6 +778,27 @@ hr{
         font-size: .9em;
         font-weight: 200;
     }
+    .proyect img{
+        width: 100%;
+    }
+    
+    .newProyect {
+        width:100%;
+        height: 75vh;
+        text-align: center;
+    }
+    .gif {
+        margin: 0;
+        width: 100%;
+        height: auto;
+    }
+    .linkModal{
+        display: flex;
+        flex-direction: column;
+    }
+    .containerSocial {
+        margin-top: 20em;
+    }
 
 }
 @media screen and (max-width: 685px) {
@@ -742,7 +808,7 @@ hr{
     }
 
     .serviceDiv {
-        height: 65vh;
+        height: 45vh;
     }
 }
 @media screen and (min-width: 2200px) {
