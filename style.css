@@ -234,20 +234,26 @@ span {
 .textAbout{
     font-size: .9em;
     padding: 0 2em;
-    line-height: 135%;
+    line-height: 145%;
     letter-spacing: 1px;
     font-weight: 200;
+}
+.linkedin{
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+.linkedin:hover{
+    color: #4ce0d2;
 }
 .imgTec{
     padding: 2em;
 }
 .imgTec div {
     display: inline-block;
-    background-color: rgba(0, 0, 0, .2);
-    font-size: .8em;
-    padding: 1.5em;
+    padding: .5em 1.5em; 
     margin: 2em;
-    clip-path: circle(40% at 50% 50%);
     cursor: default;
 }
 .imgTec div:hover{
@@ -326,6 +332,7 @@ hr{
     margin: 5em 0;
     text-align: center;
     position: relative;
+    height: 100vh;
 }
 .containerProyect {
     display: flex;
@@ -335,7 +342,7 @@ hr{
     align-items: center;
     height: 50vh;
 }
-.proyect{
+/* .proyect{
     position: relative;
     line-height:0;
     border: 2px solid transparent;
@@ -348,6 +355,103 @@ hr{
 .proyect img{
     max-width: 25em;
     height: auto;
+} */
+.proyect{
+    position: relative;
+}
+ul {
+    list-style: none;
+    max-width: 100vw;
+    margin: 0 auto;
+
+}
+li {
+    float: left;
+    width: 16.666%;
+    height: 60vh;
+    opacity: 0.4;
+    transition: all .5s ease-in-out;
+}
+
+    li:hover,
+    li:first-child~li:last-child {
+        width: 50%;
+        opacity: 1;
+        transition: all .5s ease-in-out;
+    }
+
+    li:hover~li:last-child {
+        width: 16.666%;
+        opacity: 0.4;
+    }
+
+    li:nth-child(1) {
+        background: url(./img/coder1.jpg) top center no-repeat;
+        background-size: cover;
+    }
+
+    li:nth-child(2) {
+        background: url(./img/coder2.jpg) top right no-repeat;
+        background-size: cover;
+    }
+
+    li:nth-child(3) {
+        background: url(./img/coder3.jpg) top center no-repeat;
+        background-size: cover;
+    }
+
+
+
+
+/** efecto de filtro **/
+
+    ul li::before {
+        content: "";
+        display: block;
+        width: 0;
+        height: 100%;
+        transition:(all .5s ease-in-out);
+    }
+
+    ul li:nth-child(1)::before {
+        background-color: rgba(255, 87, 34, .2)
+    }
+
+    ul li:nth-child(2)::before {
+        background-color: rgba(76, 175, 80, .25)
+    }
+
+    ul li:nth-child(3)::before {
+        background-color: rgba(33, 150, 243, .25)
+    }
+
+
+
+input:checked~ul li::before {
+    width: 100%;
+    transition: (all .5s ease-in-out);
+}
+
+input[type="checkbox"] {
+    width: 555px;
+    margin: 15px;
+    font-family: "Segoe UI", "Ubuntu", monospace;
+    color: white;
+
+    
+}
+input::before {
+    content: "Pure CSS Accordion";
+    font-size: 1.5em;
+    position: relative;
+    top: -10px;
+}
+input::after {
+    content: "Filters Enabled";
+    color: #caa;
+    position: relative;
+    top: -10px;
+    left: 5px;
 }
 
 .workTitle {
@@ -359,16 +463,16 @@ hr{
 
 .workText {
     font-size: .9em;
-    padding: 0 5em;
+    padding: 2em 5em;
     line-height: 135%;
     letter-spacing: 1px;
     font-weight: 200;
 }
 .btnWork{
     position: absolute;
-    left: 30%;
-    top: 35%;
-    padding: 1.5em 4em;
+    left: 40%;
+    top: 45%;
+    padding: 1.5em 3em;
     outline: none;
     border: none;
     background: #1213149f;
@@ -454,13 +558,11 @@ hr{
 .containerContact {
     margin: 5em ;
 }
-.containerSocial{
-    padding: 5em 0;
-}
 .socialTitle{
-    padding: 2em;
     font-size: 1.5em;
     font-family: 'Comfortaa',cursive;
+    margin: 1em;
+    padding: 5em 0 0 0 ;
 }
 
 .socialText {
@@ -487,7 +589,12 @@ hr{
     padding:2em 1em 1em 1em;
 }
 .linkNetworkSocial{
-    margin-bottom: 1em;
+    text-decoration: none;
+    color: rgba(255, 255, 255, .7);
+}
+.titleNetworkSocial{
+    margin-top: 1em;
+
 }
 .textNetworkSocial{
     font-size: .8em;
@@ -499,6 +606,7 @@ hr{
     background-size: 75em;
     background-position: 17em 50%;
     background-repeat: no-repeat;
+    padding-top: 5em;
 }
 .form{
     display: flex;
@@ -519,6 +627,8 @@ hr{
 
 }
 .formText{
+    font-family: 'Manrope',
+    sans-serif;
     width: 100%;
     height: 15em;
     margin: .5em;
@@ -620,16 +730,13 @@ hr{
     .itemServ {
         margin-top: 1em;
     }
+
+
     .form {
         width: 90%;
     }
 }
-@media screen and (max-width: 810px){
 
-    .containerSocial{
-        margin-top: 25em;
-    }
-}
 
 @media screen and (max-width: 800px) {
     .label {
@@ -691,7 +798,7 @@ hr{
     .workText,
     .socialText{
         font-size: .9em;
-        padding: 0;
+        padding:0 1em;
     }
     .textAbout {
         font-size: .5em;
@@ -707,9 +814,6 @@ hr{
         padding: 1em 3em;
     }
 
-    .containerSocial {
-        padding: 0;
-    }
 
     .service {
         padding: 3em 0;
@@ -722,6 +826,37 @@ hr{
     .serviceDiv {
         height: 35vh;
     }
+
+
+    .containerProyect {
+        display: block;
+
+    }
+
+    .proyect {
+        width: 100%;
+    }
+
+    ul {
+        width: 100%;
+        margin: 0 auto;
+
+    }
+
+    li {
+        float: none;
+        height: 25vh;
+        opacity: 1;
+        margin: 1em 0;
+    }
+
+    li:hover,
+    li:first-child~li:last-child {
+        width: 100%;
+        opacity: 1;
+    }
+
+
     .socialNetwork{
         margin-bottom: 2em;
     }
@@ -730,11 +865,14 @@ hr{
         background-position: -10em 50%;
     }
     .titleFooter {
-        order: 2;
         padding: 1em 0;
         font-size: .8em;
         text-align: center;
     }
+    .containerWork {
+        height: 120vh;
+    }
+    
 }
 @media screen and (max-width: 600px){
 
@@ -777,10 +915,11 @@ hr{
     .serviceText{
         font-size: .9em;
         font-weight: 200;
+        padding: 0 1em;
     }
-    .proyect img{
+    /* .proyect img{
         width: 100%;
-    }
+    } */
     
     .newProyect {
         width:100%;
@@ -797,8 +936,8 @@ hr{
         display: flex;
         flex-direction: column;
     }
-    .containerSocial {
-        margin-top: 20em;
+    .titleFooter {
+        order: 2;
     }
 
 }
@@ -824,5 +963,11 @@ hr{
     .btnWork {
         top: 35%;
         left: 25%;
+    }
+    
+}
+@media screen and (max-width: 350px) {
+    .containerWork {
+        height: 130vh;
     }
 }
