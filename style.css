@@ -470,8 +470,10 @@ input::after {
 }
 .btnWork{
     position: absolute;
-    left: 40%;
-    top: 45%;
+    left: 50%;
+    top: 50%;
+    margin-top: -25px;
+    margin-left: -65px;
     padding: 1.5em 3em;
     outline: none;
     border: none;
@@ -917,9 +919,6 @@ input::after {
         font-weight: 200;
         padding: 0 1em;
     }
-    /* .proyect img{
-        width: 100%;
-    } */
     
     .newProyect {
         width:100%;
@@ -957,14 +956,6 @@ input::after {
         grid-template-columns: repeat(auto-fill, minmax(300px, 20%));
         gap: 1em;
     }
-}
-@media screen and (max-width: 420px){
-    
-    .btnWork {
-        top: 35%;
-        left: 25%;
-    }
-    
 }
 @media screen and (max-width: 350px) {
     .containerWork {
