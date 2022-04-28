@@ -302,19 +302,6 @@ hr{
 } 
 
 
-.serviceTitle  {
-    font-family: 'Comfortaa',cursive;
-    bottom: 0;
-    font-size: 2rem;
-    font-weight: 600;
-    margin: 0;
-    padding: 15px;
-    position: absolute;
-    right: 0;
-    text-align: end;
-    width: 100%;
-    transition: all .1s ease-out;
-}
 .itemServ{
     bottom: 85px;
     font-size: 2rem;
@@ -328,6 +315,33 @@ hr{
     text-align: end;
     transition: all .5s ease-out;
 }
+
+.serviceTitle  {
+    font-family: 'Comfortaa',cursive;
+    bottom: 0;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 15px;
+    position: absolute;
+    right: 0;
+    text-align: end;
+    width: 100%;
+    transition: all .3s ease-out;
+}
+
+.serviceText {
+    bottom: 50px;
+    color: white;
+    left: 0;
+    opacity: 0;
+    padding: 1.25em;
+    position: absolute;
+    transition: all .3s linear;
+    width: 100%;
+    justify-items: center;
+}
+
 
 .serviceDiv:hover{
     background-position: right;
@@ -348,17 +362,6 @@ hr{
     opacity: 1;
 }
 
-.serviceText {
-    bottom: 50px;
-    color: white;
-    left: 0;
-    opacity: 0;
-    padding: 1.25em;
-    position: absolute;
-    transition: all .3s linear;
-    width: 100%;
-    justify-items: center;
-}
 
 /*trabajos*/
 .containerWork {
@@ -757,7 +760,7 @@ input::after {
         margin-top: 1em;
     }
     .containerForm {
-        background-position: 17vw 50%;
+        background-position: -15vw 50%;
     }
     .form {
         width: 90%;
@@ -882,7 +885,7 @@ input::after {
     }
     
     .containerForm {
-        background-position: -10em 50%;
+        background-position: -20em 50%;
     }
     .titleFooter {
         padding: 1em 0;
