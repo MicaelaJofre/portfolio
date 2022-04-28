@@ -42,13 +42,13 @@
 <body id="body">
     <header class="navBar">
         <video class="video" loop autoplay preload muted src="./video/fibraOptica.mp4"> </video>
-        <nav class="menu">
-            <div class="label">|||</div>
-            <div class="spacer"></div>
-            <a href="#about" class="item"><span>Sobre mí</span></a>
+        <nav class="menu" id="menu">
+            <div class="label" id="label">|||</div>
+            <div class="spacer" id="spacer"></div>
+            <a href="#about" class="item" ><span>Sobre mí</span></a>
             <a href="#service" class="item"><span>Servicios</span></a>
-            <a href="#work" class="item"><span>Trabajos</span></a>
-            <a href="#contact" class="item"><span>Contacto</span></a>
+            <a href="#work" class="item" ><span>Trabajos</span></a>
+            <a href="#contact" class="item" ><span>Contacto</span></a>
         </nav>
         <article class="hero">
             <h1 class="logo">Micaela Jofré</h1>
@@ -116,27 +116,24 @@
             <p class="textService" >En esta sección te paso a mostrar algunos de los servicios que ofrezco.<br>No dudes en consultarme.</p>
             <article class="service">
                 <div class="serviceDiv">
-                    <i class="fa fa-solid fa-code itemServ" style="color : white; font-size: 2.5em;"></i>
-                    <h3 class="serviceTitle" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1500">Desarrollo
-                        Web</h3>
+                    <i class="fa fa-solid fa-code itemServ" style="font-size: 2.5em;"></i>
+                    <h3 class="serviceTitle" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1500">Desarrollo<br>Web</h3>
                     <p class="serviceText">Sitios web receptivos creados para una mejor experiencia de usuario. Optimizados para el rendimiento y los motores de búsqueda. </p>
                 </div>
                 <div class="serviceDiv">
-                    <i class="fa fa-solid fa-cart-plus itemServ" style="color : white; font-size: 2.5em;"></i>
-                    <h3 class="serviceTitle" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1500">Soluciones
-                        e-commerce</h3>
+                    <i class="fa fa-solid fa-cart-plus itemServ" style="font-size: 2.5em;"></i>
+                    <h3 class="serviceTitle" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1500">Soluciones<br>e-commerce</h3>
                     <p class="serviceText">Integración de plataformas de comercio electrónico, plantillas personalizadas, carrito de compras y más.</p>
                 </div>
                 <div class="serviceDiv">
-                    <i class="fa fa-solid fa-pen itemServ" style="color : white; font-size: 2.5em;"></i>
-                    <h3 class="serviceTitle" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1500">Diseño Web
+                    <i class="fa fa-solid fa-pen itemServ" style="font-size: 2.5em;"></i>
+                    <h3 class="serviceTitle" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1500">Diseño<br>Web
                     </h3>
                     <p class="serviceText">Planificación, diseño, implementación y mantenimiento de sitios web para una óptima interactividad y navegavilidad del mismo.</p>
                 </div>
                 <div class="serviceDiv">
-                    <i class="fa fa-solid fa-mobile itemServ" style="color : white; font-size: 2.5em;"></i>
-                    <h3 class="serviceTitle" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1500">Responsive
-                        desing</h3>
+                    <i class="fa fa-solid fa-mobile itemServ" style="font-size: 2.5em;"></i>
+                    <h3 class="serviceTitle" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1500">Responsive<br>desing</h3>
                         <p class="serviceText">El objetivo es adaptar la apariencia del sitio web al dispositivo que
                             esté utilizando el usuario para una mayor accesibilidad.</p>
                 </div>
@@ -148,21 +145,17 @@
             <p class="workText">Aquí algunos trabajos y proyectos en los que he trabajado recientemente.<br> En cada proyecto vas a encontrar su respectivo enlace para ver el sitio web y su repositorio en GitHub.</p>
             <ul class="containerProyect">
                 <li class="proyect">
-                    <!-- <img src="./img/coder1.jpg" alt=""> -->
                     <button id="btnFirs" class="btnWork">Ver más</button>
                 </li>
                 <li class="proyect">
-                    <!-- <img src="./img/coder3.jpg" alt=""> -->
                     <button id="btnThird" class="btnWork">Ver más</button>
                 </li>
                 <li class="proyect">
-                    <!-- <img src="./img/coder2.jpg" alt=""> -->
                     <button id="btnSecond" class="btnWork">Ver más</button>
                 </li>
             </ul>
             <article class="modalWork">
                 <div class="containerModal" id="containerModal">
-                    <!--cards agregadas con js-->
                 </div>
             </article>
         </section>
@@ -224,8 +217,7 @@
     <footer class="containerFooter">
         <hr class="hrFooter">
         <div class="footer">
-            <h4 class="titleFooter">Copyright ©2022 All rights reserved | This template is made with by <i
-                    class="fa fa-solid fa-heart"></i> by Micaela Jofré</h4>
+            <h4 class="titleFooter">Copyright ©2022  |  Developed by Micaela Jofré</h4>
             <div class="iconFooter">
                 <a href="" target="_blank"><i class="fa fa-solid fa-envelope" style="color : white; font-size: 1.8em; padding:0 .5em;"></i></a>
                 <a href="https://api.whatsapp.com/send?phone=5492613041445&text=Hola, estoy interesado en "
@@ -237,6 +229,7 @@
     <script>
         AOS.init();
     </script>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 </html>

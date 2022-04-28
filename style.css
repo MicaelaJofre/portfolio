@@ -85,14 +85,15 @@ span {
 
 .item:hover span {
     color: #4ce0d2;
+    cursor: pointer;
 }
 
-.menu:hover .spacer:before {
+.menu-open .spacer:before {
     width: 100%;
     transition-delay: 0s;
 }
 
-.menu:hover .item {
+.menu-open .item {
     opacity: 1;
     top: 0px;
 }
@@ -153,29 +154,6 @@ span {
     transition-delay: 0.4s;
 }
 
-.menu:hover .item:nth-child(5) {
-    transition-delay: 0.45s;
-}
-
-.menu:hover .item:nth-child(6) {
-    transition-delay: 0.5s;
-}
-
-.menu:hover .item:nth-child(7) {
-    transition-delay: 0.55s;
-}
-
-.menu:hover .item:nth-child(8) {
-    transition-delay: 0.6s;
-}
-
-.menu:hover .item:nth-child(9) {
-    transition-delay: 0.65s;
-}
-
-.menu:hover .item:nth-child(10) {
-    transition-delay: 0.7s;
-}
 
 /*hero*/
 
@@ -305,28 +283,83 @@ hr{
     grid-template-columns: repeat(auto-fill, minmax(300px, 40%));
     gap: 3em;
     justify-content: space-evenly;
+    position: relative;
 }
 .serviceDiv{
-    height: 50vh;
+    height: 20em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border: 5px solid rgba(255, 255, 255, .1);
-}
-.serviceTitle{
-    padding: .5em;
-    font-size: 1.5em;
+    position: relative;
+    background-image: url(./img/hexagono.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    transition: all .3s ease-out;
+} 
+
+
+.serviceTitle  {
     font-family: 'Comfortaa',cursive;
+    bottom: 0;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 15px;
+    position: absolute;
+    right: 0;
+    text-align: end;
+    width: 100%;
+    transition: all .1s ease-out;
 }
-.serviceText {
+.itemServ{
+    bottom: 85px;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 15px;
+    position: absolute;
+    right: 0;
+    color: #fff;
+    width: 100%;
+    text-align: end;
+    transition: all .5s ease-out;
+}
+
+.serviceDiv:hover{
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 1400px;
+}
+.serviceDiv:hover .serviceTitle {
+    transform: translate(-42%, -135%);
+    font-size: 1.5;
+    color: #4ce0d2;
+}
+.serviceDiv:hover .itemServ {
+    transform: translate(-75%, -200%);
+    color: #4ce0d2;
+}
+.serviceDiv:hover .serviceText{
     font-size: .9em;
-    padding: 0 3em;
-    line-height: 135%;
-    letter-spacing: 1px;
-    font-weight: 300;
-    margin-bottom: 3em;
+    opacity: 1;
 }
+
+.serviceText {
+    bottom: 50px;
+    color: white;
+    left: 0;
+    opacity: 0;
+    padding: 1.25em;
+    position: absolute;
+    transition: all .3s linear;
+    width: 100%;
+    justify-items: center;
+}
+
 /*trabajos*/
 .containerWork {
     margin: 5em 0;
@@ -342,20 +375,6 @@ hr{
     align-items: center;
     height: 50vh;
 }
-/* .proyect{
-    position: relative;
-    line-height:0;
-    border: 2px solid transparent;
-}
-.proyect:hover{
-    transform:scale(1.1);
-    z-index: 100;
-    border: solid 5px rgba(0, 0, 0, 0.289);
-}
-.proyect img{
-    max-width: 25em;
-    height: auto;
-} */
 .proyect{
     position: relative;
 }
@@ -594,6 +613,9 @@ input::after {
     text-decoration: none;
     color: rgba(255, 255, 255, .7);
 }
+.linkNetworkSocial:hover{
+    color: #4ce0d2;
+}
 .titleNetworkSocial{
     margin-top: 1em;
 
@@ -605,8 +627,8 @@ input::after {
 
 .containerForm{
     background-image: url(./img/explocion.png);
-    background-size: 75em;
-    background-position: 17em 50%;
+    background-size: 110em;
+    background-position: 20vw 50%;
     background-repeat: no-repeat;
     padding-top: 5em;
 }
@@ -726,14 +748,17 @@ input::after {
     .service {
         padding: 3em 1em;
     }
-    .serviceDiv {
-        height: 35vh;
+    .serviceDiv:hover .serviceTitle {
+        transform: translate(-33%, -170%);
+        font-size: 1.7em;
     }
+
     .itemServ {
         margin-top: 1em;
     }
-
-
+    .containerForm {
+        background-position: 17vw 50%;
+    }
     .form {
         width: 90%;
     }
@@ -803,7 +828,7 @@ input::after {
         padding:0 1em;
     }
     .textAbout {
-        font-size: .5em;
+        font-size: .8em;
         text-align: justify;
     }
 
@@ -821,14 +846,7 @@ input::after {
         padding: 3em 0;
         gap: 1;
     }
-    .serviceDiv{
-        padding: 0;
-        width: 100%;
-    }
-    .serviceDiv {
-        height: 35vh;
-    }
-
+    
 
     .containerProyect {
         display: block;
@@ -909,16 +927,7 @@ input::after {
         font-size: .8em;
     }
     
-    .serviceTitle{
-        margin-top: .5em;
-        font-size: 1.1em;
-        font-weight: 600;
-    }
-    .serviceText{
-        font-size: .9em;
-        font-weight: 200;
-        padding: 0 1em;
-    }
+    
     
     .newProyect {
         width:100%;
@@ -946,15 +955,25 @@ input::after {
         grid-template-columns: repeat(auto-fill, minmax(300px, 90%));
         gap: 1em;
     }
+    
 
-    .serviceDiv {
-        height: 45vh;
-    }
 }
-@media screen and (min-width: 2200px) {
+@media screen and (min-width: 1500px) {
+    .containerForm {
+        background-position: 35vw 50%;
+    }
     .service {
         grid-template-columns: repeat(auto-fill, minmax(300px, 20%));
         gap: 1em;
+        max-width: 150em;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .serviceDiv:hover .serviceTitle {
+        transform: translate(-32%, -170%);
+        font-size: 1.7em;
     }
 }
 @media screen and (max-width: 350px) {
