@@ -877,9 +877,18 @@ input::after {
         clip-path: none;
         z-index: 10;
     }
-
-    .spacer {
-        display: none;
+    .spacer{
+        opacity: 0;
+        transition: all .8s ease-in-out;
+    }
+    .menu-open .spacer {
+        clip-path: polygon(25% 0, 0 5%, 99% 5%);
+        background-color: #4ce0d2;
+        width: 60vw;
+        height: 8em;
+        z-index: 20;
+        top: -5px;
+        opacity: 1;
     }
 
     .items {
@@ -907,6 +916,11 @@ input::after {
     .item {
         visibility: hidden;
         opacity: 0;
+        border-bottom: solid 1px rgba(255, 255, 255, 0.74);
+    }
+    .item:hover{
+        color: #4ce0d2;
+        border-bottom: solid 1px #4ce0d2;
     }
 
     .menu-open .item {
