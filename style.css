@@ -94,6 +94,7 @@ span {
 .menu-open .item {
     opacity: 1;
     top: 0px;
+    pointer-events: all;
 }
 
 .item:nth-child(1) {
