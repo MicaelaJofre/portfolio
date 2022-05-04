@@ -880,7 +880,7 @@ input::after {
     }
     .spacer{
         opacity: 0;
-        transition: all .8s ease-in-out;
+        transition: all .5s ease-in-out;
     }
     .menu-open .spacer {
         clip-path: polygon(25% 0, 0 5%, 99% 5%);
@@ -905,7 +905,7 @@ input::after {
         background: linear-gradient(4deg, rgba(133, 70, 140, 0.6895133053221288) 36%, rgba(39, 189, 223, 0.742734593837535) 65%, rgba(9, 216, 199, 0.8631827731092436) 100%);
         width: 60vw;
         height: 100vh;
-        transition: all .8s ease-in-out;
+        transition: all .3s ease-in-out;
         opacity: 0;
     }
 
