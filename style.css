@@ -27,6 +27,8 @@ body {
     pointer-events: none;
     z-index: 20;
     position: fixed;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 
@@ -915,7 +917,7 @@ input::after {
     .menu-open .items {
         opacity: 1;
         left: 0;
-        top: 30%;
+        top: 3.5em;
     }
 
     .item {
