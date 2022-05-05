@@ -68,6 +68,7 @@ body {
     color: rgba(255, 255, 255, .7);
     background: rgba(0, 0, 0, 0.781);
     padding: .5em 1em;
+    user-select: none;
 }
 
 span {
@@ -87,6 +88,7 @@ span {
     transition: width 0.25s ease;
     transition-delay: 0.7s;
 }
+
 .menu-open .spacer:before {
     width: 100%;
     transition-delay: 0s;
