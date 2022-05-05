@@ -39,6 +39,7 @@ body {
     background: rgba(0, 0, 0, .8);
     padding: .5em;
     clip-path: circle(40% at 50% 50%);
+    user-select: none;
 }
 .label:hover{
     color: #4ce0d2;
@@ -850,11 +851,11 @@ input::after {
 }
 @media screen and (max-width: 600px){
     .hero {
-        height: 50vh;
+        height: 60vh;
     }
 
     .video {
-        height: 55vh;
+        height: 70vh;
     }
     .logo{
         font-size: 1.5em;
@@ -880,10 +881,10 @@ input::after {
     }
     .spacer{
         opacity: 0;
-        transition: all .5s ease-in-out;
+        transition: all .2s ease-in-out;
     }
     .menu-open .spacer {
-        clip-path: polygon(25% 0, 0 5%, 99% 5%);
+        clip-path: polygon(20% 0, 0 5%, 80% 5%);
         background-color: #4ce0d2;
         width: 60vw;
         height: 8em;
@@ -901,11 +902,11 @@ input::after {
         padding-bottom: 5em;
         top: 0;
         left: -1500px;
-        background: rgb(133, 70, 140);
-        background: linear-gradient(4deg, rgba(133, 70, 140, 0.6895133053221288) 36%, rgba(39, 189, 223, 0.742734593837535) 65%, rgba(9, 216, 199, 0.8631827731092436) 100%);
-        width: 60vw;
+        background: rgb(131, 60, 140);
+        background: linear-gradient(4deg, rgba(131, 60, 140, 0.9051995798319328) 30%, rgba(39, 189, 223, 0.742734593837535) 71%, rgba(9, 216, 199, 0.8631827731092436) 100%);
+        width: 50vw;
         height: 100vh;
-        transition: all .3s ease-in-out;
+        transition: all .2s ease-in-out;
         opacity: 0;
     }
 
@@ -916,20 +917,21 @@ input::after {
     }
 
     .item {
+        font-size: 1.1em;
+        font-weight: 600;
+        padding: 1em;
+        background: transparent;
+        color: #121314;
         visibility: hidden;
         opacity: 0;
-        border-bottom: solid 1px rgba(255, 255, 255, 0.74);
+        border-bottom: solid 2px #121314;
     }
     .item:hover{
         color: #4ce0d2;
         border-bottom: solid 1px #4ce0d2;
     }
 
-    .menu-open .item {
-        font-size: 1.1em;
-        font-weight: 600;
-        padding: 1em;
-        background: transparent;
+    .menu-open .item {        
         opacity: 1;
         visibility: visible;
         z-index: 100;
