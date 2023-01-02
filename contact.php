@@ -4,7 +4,7 @@
     $tel = $_POST['phone'];
     $mensaje = $_POST['detail'];
     $formcontent="Nombre: $nombre \n E-mail: $email \n Telefono: $tel \n Mensaje: $mensaje";
-    $recipient = "consultas@micaelajofre.ml";
+    $recipient = "mkjofre@gmail.com";
     $subject = "Consultas";
     $header = "From: $email \r\n";
     $header .= "Content-Type: text/plain; charset=UTF-8";
