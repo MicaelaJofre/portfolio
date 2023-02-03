@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;600&display=swap');
 
-html{
+html {
     scroll-behavior: smooth;
 }
+
 body {
     background-color: #121314;
     color: rgba(255, 255, 255, .7);
@@ -43,7 +44,8 @@ body {
     clip-path: circle(40% at 50% 50%);
     user-select: none;
 }
-.label:hover{
+
+.label:hover {
     color: #4ce0d2;
 }
 
@@ -81,7 +83,8 @@ span {
     color: #4ce0d2;
     cursor: pointer;
 }
-.spacer:before{
+
+.spacer:before {
     content: "";
     position: absolute;
     border-bottom: 1px solid #ffffff;
@@ -93,7 +96,7 @@ span {
 
 .menu-open .spacer:before {
     width: 100%;
-    transition-delay: 0s; 
+    transition-delay: 0s;
 }
 
 .menu-open .item {
@@ -138,7 +141,7 @@ span {
 
 /*hero*/
 
-.hero{
+.hero {
     width: 100%;
     height: 95vh;
     display: flex;
@@ -147,81 +150,104 @@ span {
     align-items: center;
     overflow-x: hidden;
 }
-.logo{
+
+.logo {
     font-family: 'Comfortaa', cursive;
     font-size: 4.5em;
 }
-.video {
+
+.backgroundHero {
     position: absolute;
     left: 0;
-    top: 0;  
+    top: 0;
     z-index: -10;
     visibility: visible;
     overflow-x: hidden;
     width: 100%;
     height: 100vh;
     object-fit: cover;
+    opacity: .2;
+    filter: blur(1px);
 }
-.iconsSocial a i{
+
+.iconsSocial a i {
     font-size: 1.7em;
     margin: .5em;
     padding: 7px;
     cursor: pointer;
 }
-.fa-brands:hover, .fa-solid:hover {
+
+.fa-brands:hover,
+.fa-solid:hover {
     color: #4ce0d2 !important;
 }
 
 /*main*/
 /*sobre mi*/
 
-.container{
+.container {
     margin: 5em 0;
     text-align: center;
     overflow-x: hidden;
 }
-.containerAbout{
+
+.containerAbout {
     padding: 5em;
     background: rgba(0, 0, 0, .2);
 }
-.titleAbout{
+
+.titleAbout {
     display: inline-block;
     font-size: 1.5em;
     margin: 1em;
     padding-top: 5em;
 }
-.textAbout{
+
+.textAbout {
     font-size: .9em;
     padding: 0 2em;
     line-height: 145%;
     letter-spacing: 1px;
     font-weight: 200;
 }
-.linkedin{
+
+.linkedin {
     text-decoration: none;
     font-weight: 600;
     color: #fff;
     cursor: pointer;
 }
-.linkedin:hover{
+
+.linkedin:hover {
     color: #4ce0d2;
 }
-.imgTec{
+
+.imgTec {
     padding: 2em;
 }
+
 .imgTec div {
     display: inline-block;
-    padding: .5em 1.5em; 
-    margin: 2em;
+    padding: .5em 1.5em;
+    margin: 1em;
     cursor: default;
 }
-.imgTec div:hover{
+
+.imgTec div:hover {
     color: #4ce0d2;
     transform: scale(1.1);
 }
-.btnAbout{
+
+.invertLogo {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+    width: auto;
+    height: 52px;
+}
+
+.btnAbout {
     background: transparent;
-    color:rgba(255, 255, 255, .7);
+    color: rgba(255, 255, 255, .7);
     padding: .8em 2em;
     text-transform: uppercase;
     border: solid 1px rgba(255, 255, 255, .3);
@@ -229,27 +255,31 @@ span {
     margin-top: 0;
     cursor: pointer;
 }
-.btnAbout:hover{
+
+.btnAbout:hover {
     color: #4ce0d2;
     border: 1px solid #4ce0d2;
 }
-hr{
+
+hr {
     border: none;
     background-color: rgba(255, 255, 255, .3);
     height: 1px;
 }
 
 /*sercicios*/
-.containerService{
+.containerService {
     margin: 5em 0;
     text-align: center;
 }
+
 .titleService {
     display: inline-block;
     font-size: 1.5em;
     margin: 1em;
     padding: 5em 0 0 0;
 }
+
 .textService {
     font-size: .9em;
     padding: 0 2em;
@@ -258,15 +288,16 @@ hr{
     font-weight: 200;
 }
 
-.service{
-    padding: 5em ;
+.service {
+    padding: 5em;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 40%));
     gap: 3em;
     justify-content: space-evenly;
     position: relative;
 }
-.serviceDiv{
+
+.serviceDiv {
     height: 20em;
     display: flex;
     flex-direction: column;
@@ -280,10 +311,10 @@ hr{
     background-repeat: no-repeat;
     overflow: hidden;
     transition: all .3s ease-out;
-} 
+}
 
 
-.itemServ{
+.itemServ {
     bottom: 85px;
     font-size: 2rem;
     font-weight: 600;
@@ -297,8 +328,8 @@ hr{
     transition: all .5s ease-out;
 }
 
-.serviceTitle  {
-    font-family: 'Comfortaa',cursive;
+.serviceTitle {
+    font-family: 'Comfortaa', cursive;
     bottom: 0;
     font-size: 2rem;
     font-weight: 600;
@@ -324,21 +355,24 @@ hr{
 }
 
 
-.serviceDiv:hover{
+.serviceDiv:hover {
     background-position: right;
     background-repeat: no-repeat;
     background-size: 1400px;
 }
+
 .serviceDiv:hover .serviceTitle {
     transform: translate(-42%, -135%);
     font-size: 1.5;
     color: #4ce0d2;
 }
+
 .serviceDiv:hover .itemServ {
     transform: translate(-75%, -200%);
     color: #4ce0d2;
 }
-.serviceDiv:hover .serviceText{
+
+.serviceDiv:hover .serviceText {
     font-size: .9em;
     opacity: 1;
 }
@@ -351,6 +385,7 @@ hr{
     position: relative;
     height: 100vh;
 }
+
 .containerProyect {
     display: flex;
     justify-content: center;
@@ -359,74 +394,98 @@ hr{
     align-items: center;
     height: 50vh;
 }
-.proyect{
+
+.proyect {
     position: relative;
 }
+
 ul {
     list-style: none;
     max-width: 100vw;
     margin: 0 auto;
 
 }
+
 li {
     float: left;
-    width: 16.666%;
+    width: 12%;
     height: 60vh;
     opacity: 0.4;
     transition: all .5s ease-in-out;
+    border: solid 3px #333;
 }
 
-    li:hover,
-    li:first-child~li:last-child {
-        width: 50%;
-        opacity: 1;
-        transition: all .5s ease-in-out;
-    }
+li:hover,
+li:first-child~li:last-child {
+    width: 45%;
+    opacity: 1;
+    transition: all .5s ease-in-out;
+}
 
-    li:hover~li:last-child {
-        width: 16.666%;
-        opacity: 0.4;
-    }
+li:hover~li:last-child {
+    width: 12%;
+    opacity: 0.4;
+}
 
-    li:nth-child(1) {
-        background: url(./img/coder1.jpg) top center no-repeat;
-        background-size: cover;
-    }
+li:nth-child(1) {
+    background: url(./img/rickMorty.jpeg) top center no-repeat;
+    background-size: cover;
+}
 
-    li:nth-child(2) {
-        background: url(./img/coder2.jpg) top right no-repeat;
-        background-size: cover;
-    }
+li:nth-child(2) {
+    background: url(./img/coder1.jpg) top center no-repeat;
+    background-size: cover;
+}
 
-    li:nth-child(3) {
-        background: url(./img/coder3.jpg) top center no-repeat;
-        background-size: cover;
-    }
+li:nth-child(3) {
+    background: url(./img/message.jpeg) top center no-repeat;
+    background-size: cover;
+}
+
+li:nth-child(4) {
+    background: url(./img/coder2.jpg) top right no-repeat;
+    background-size: cover;
+}
+
+li:nth-child(5) {
+    background: url(./img/coder3.jpg) top center no-repeat;
+    background-size: cover;
+}
+
+
 
 
 
 
 /** efecto de filtro **/
 
-    ul li::before {
-        content: "";
-        display: block;
-        width: 0;
-        height: 100%;
-        transition:(all .5s ease-in-out);
-    }
+ul li::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+    transition: (all .5s ease-in-out);
+}
 
-    ul li:nth-child(1)::before {
-        background-color: rgba(255, 87, 34, .2)
-    }
+ul li:nth-child(1)::before {
+    background-color: rgba(255, 87, 34, .2)
+}
 
-    ul li:nth-child(2)::before {
-        background-color: rgba(76, 175, 80, .25)
-    }
+ul li:nth-child(2)::before {
+    background-color: rgba(76, 175, 80, .25)
+}
 
-    ul li:nth-child(3)::before {
-        background-color: rgba(33, 150, 243, .25)
-    }
+ul li:nth-child(3)::before {
+    background-color: rgba(33, 150, 243, .25)
+}
+
+ul li:nth-child(4)::before {
+    background-color: rgba(76, 175, 80, .25)
+}
+
+ul li:nth-child(5)::before {
+    background-color: rgba(255, 87, 34, .2)
+}
 
 
 
@@ -441,14 +500,16 @@ input[type="checkbox"] {
     font-family: "Segoe UI", "Ubuntu", monospace;
     color: white;
 
-    
+
 }
+
 input::before {
     content: "Pure CSS Accordion";
     font-size: 1.5em;
     position: relative;
     top: -10px;
 }
+
 input::after {
     content: "Filters Enabled";
     color: #caa;
@@ -462,7 +523,7 @@ input::after {
     font-size: 1.5em;
     margin: 1em;
     padding: 5em 0 0 0;
-    }
+}
 
 .workText {
     font-size: .9em;
@@ -471,7 +532,8 @@ input::after {
     letter-spacing: 1px;
     font-weight: 200;
 }
-.btnWork{
+
+.btnWork {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -485,13 +547,15 @@ input::after {
     border: transparent 2px solid;
     cursor: pointer;
 }
-.btnWork:hover{
+
+.btnWork:hover {
     color: #4ce0d2;
     border: 2px solid #4ce0d2;
 }
+
 /*modal*/
 
-.containerModal{
+.containerModal {
     opacity: 0;
     visibility: hidden;
     width: 100%;
@@ -503,14 +567,15 @@ input::after {
     position: fixed;
     top: 0;
     left: 0;
-    background:rgba(0, 0, 0, 0.445);
+    background: rgba(0, 0, 0, 0.445);
     z-index: 110;
 }
 
-.containerClose{
+.containerClose {
     display: flex;
     justify-content: end;
 }
+
 .close {
     width: 20px;
     height: auto;
@@ -521,14 +586,17 @@ input::after {
     margin: .5em 1em;
     cursor: pointer;
 }
-.close:hover{
+
+.close:hover {
     background: #4ce0d148;
 }
+
 .gif {
     width: 100%;
     height: 23em;
     object-fit: cover;
 }
+
 .newProyect {
     background: #fff;
     max-width: 50em;
@@ -539,50 +607,56 @@ input::after {
     margin-top: 5em;
 }
 
-.newProyect h4{
-    font-family: 'Comfortaa',cursive;
+.newProyect h4 {
+    font-family: 'Comfortaa', cursive;
     font-size: 1.2em;
     padding: .5em;
 }
+
 .textNewProyect {
     text-align: start;
     padding: .5em 2em 2em 2em;
     font-size: .8em;
 }
+
 .linkModal {
     cursor: pointer;
     text-decoration: none;
-    color: #121314; 
+    color: #121314;
     padding: 0 2em;
     border: 2px solid #1213143f;
     margin: 1em;
 }
+
 .linkModal:hover {
-    border:2px solid #4ce0d2;
+    border: 2px solid #4ce0d2;
 }
-.spanTI{
+
+.spanTI {
     font-weight: 600;
 }
 
 /*contacto*/
 .containerContact {
-    margin: 5em ;
+    margin: 5em;
 }
-.socialTitle{
+
+.socialTitle {
     font-size: 1.5em;
-    font-family: 'Comfortaa',cursive;
+    font-family: 'Comfortaa', cursive;
     margin: 1em;
-    padding: 5em 0 0 0 ;
+    padding: 5em 0 0 0;
 }
 
 .socialText {
-        font-size: .9em;
-        padding: 0 3em;
-        line-height: 135%;
-        letter-spacing: 1px;
-        font-weight: 300;
-        margin-bottom: 3em;
+    font-size: .9em;
+    padding: 0 3em;
+    line-height: 135%;
+    letter-spacing: 1px;
+    font-weight: 300;
+    margin-bottom: 3em;
 }
+
 .socialNetwork {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(15em, 20%));
@@ -590,43 +664,50 @@ input::after {
     justify-content: center;
     gap: 1em;
 }
-.social{
+
+.social {
     border: solid 2px rgba(255, 255, 255, .3);
     display: flex;
     flex-direction: column;
     justify-content: start;
     text-align: center;
-    padding:2em 1em 1em 1em;
+    padding: 2em 1em 1em 1em;
 }
-.linkNetworkSocial{
+
+.linkNetworkSocial {
     text-decoration: none;
     color: rgba(255, 255, 255, .7);
 }
-.linkNetworkSocial:hover{
+
+.linkNetworkSocial:hover {
     color: #4ce0d2;
 }
-.titleNetworkSocial{
+
+.titleNetworkSocial {
     margin-top: 1em;
 
 }
-.textNetworkSocial{
+
+.textNetworkSocial {
     font-size: .8em;
     font-weight: 200;
 }
 
-.containerForm{
+.containerForm {
     background-image: url(./img/explocion.png);
     background-size: 110em;
     background-position: 20vw 50%;
     background-repeat: no-repeat;
     padding-top: 5em;
 }
-.form{
+
+.form {
     display: flex;
     flex-direction: column;
     justify-content: start;
     width: 50%;
 }
+
 .formInput {
     width: 100%;
     height: 2.5em;
@@ -639,9 +720,10 @@ input::after {
     border-bottom: rgba(255, 255, 255, .3) solid 1px;
 
 }
-.formText{
+
+.formText {
     font-family: 'Manrope',
-    sans-serif;
+        sans-serif;
     width: 100%;
     height: 15em;
     margin: .5em;
@@ -652,13 +734,15 @@ input::after {
     border: none;
     outline: none;
     border-bottom: rgba(255, 255, 255, .3) solid 1px;
-    resize:none;
+    resize: none;
 }
+
 .formText:focus,
-.formInput:focus{
+.formInput:focus {
     border-bottom: 2px solid #4ce0d2;
 }
-.btnForm{
+
+.btnForm {
     padding: 1em 3em;
     border: rgba(255, 255, 255, .3) solid 2px;
     outline: none;
@@ -668,29 +752,33 @@ input::after {
     margin: .5em;
 }
 
-.btnForm:hover{
+.btnForm:hover {
     border: solid 2px #4ce0d2;
 }
-.imgForm{
+
+.imgForm {
     width: 50vw;
     height: 40em;
 }
 
 /*footer*/
-.containerFooter{
+.containerFooter {
     padding: 2em;
 }
-.footer{
+
+.footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     padding-top: 2em;
 }
-.titleFooter{
+
+.titleFooter {
     font-weight: 200;
 }
-.hrFooter{
+
+.hrFooter {
     margin: 2em 0;
 }
 
@@ -698,27 +786,28 @@ input::after {
 /*media query*/
 
 @media screen and (max-width: 1200px) {
-    
-    
+
+
 
     .hero {
         height: 65vh;
     }
 
-    .video {
+    .backgroundHero {
         height: 75vh;
     }
 
-    
+
 
     .imgTec div {
         font-size: .5em;
         margin: .5em;
     }
-    
+
     .service {
         padding: 3em 1em;
     }
+
     .serviceDiv:hover .serviceTitle {
         transform: translate(-33%, -170%);
         font-size: 1.7em;
@@ -731,6 +820,7 @@ input::after {
     .containerForm {
         background-position: -15vw 50%;
     }
+
     .form {
         width: 90%;
     }
@@ -738,7 +828,7 @@ input::after {
 
 
 @media screen and (max-width: 800px) {
-    
+
     .spacer {
         margin-left: 1px;
         margin-right: 1px;
@@ -748,16 +838,16 @@ input::after {
     .item {
         margin: .5em;
     }
-    
+
     .hero {
         height: 65vh;
     }
 
-    .video {
+    .backgroundHero {
         height: 75vh;
     }
 
-    
+
 
 
     .logo {
@@ -771,6 +861,7 @@ input::after {
     .iconsSocial a i {
         font-size: .8em;
     }
+
     .containerAbout,
     .containerService,
     .containerWork,
@@ -788,10 +879,11 @@ input::after {
 
     .textService,
     .workText,
-    .socialText{
+    .socialText {
         font-size: .9em;
-        padding:0 1em;
+        padding: 0 1em;
     }
+
     .textAbout {
         font-size: .8em;
         text-align: justify;
@@ -811,12 +903,13 @@ input::after {
         padding: 3em 0;
         gap: 1;
     }
-    
+
 
     .containerProyect {
         display: block;
 
     }
+
     .proyect {
         width: 100%;
     }
@@ -839,42 +932,49 @@ input::after {
         width: 100%;
         opacity: 1;
     }
-    
 
-    .socialNetwork{
+
+    .socialNetwork {
         margin-bottom: 2em;
     }
-    
+
     .containerForm {
         background-position: -20em 50%;
     }
+
     .titleFooter {
         padding: 1em 0;
         font-size: .8em;
         text-align: center;
     }
+
     .containerWork {
         height: 120vh;
     }
-    
+
 }
-@media screen and (max-width: 600px){
+
+@media screen and (max-width: 600px) {
     .hero {
         height: 60vh;
     }
 
-    .video {
+    .backgroundHero {
         height: 70vh;
     }
-    .logo{
+
+    .logo {
         font-size: 1.5em;
     }
+
     .subtitle {
         font-size: .5em;
     }
+
     .iconsSocial a i {
         font-size: .8em;
     }
+
     .menu {
         padding: 0;
     }
@@ -888,10 +988,12 @@ input::after {
         clip-path: none;
         z-index: 10;
     }
-    .spacer{
+
+    .spacer {
         opacity: 0;
         transition: all .2s ease-in-out;
     }
+
     .menu-open .spacer {
         clip-path: polygon(20% 0, 0 5%, 80% 5%);
         background-color: #4ce0d2;
@@ -935,12 +1037,13 @@ input::after {
         opacity: 0;
         border-bottom: solid 2px #121314;
     }
-    .item:hover{
+
+    .item:hover {
         color: #4ce0d2;
         border-bottom: solid 1px #4ce0d2;
     }
 
-    .menu-open .item {        
+    .menu-open .item {
         opacity: 1;
         visibility: visible;
         z-index: 100;
@@ -950,17 +1053,19 @@ input::after {
     .menu-open .spacer:before {
         width: 0;
     }
-    
-    
+
+
     .gif {
         margin: 0;
         width: 100%;
         height: auto;
     }
-    .linkModal{
+
+    .linkModal {
         display: flex;
         flex-direction: column;
     }
+
     .titleFooter {
         order: 2;
     }
@@ -972,13 +1077,15 @@ input::after {
         grid-template-columns: repeat(auto-fill, minmax(300px, 90%));
         gap: 1em;
     }
-    
+
 
 }
+
 @media screen and (min-width: 1500px) {
     .containerForm {
         background-position: 35vw 50%;
     }
+
     .service {
         grid-template-columns: repeat(auto-fill, minmax(300px, 20%));
         gap: 1em;
@@ -988,11 +1095,13 @@ input::after {
         align-items: center;
         text-align: center;
     }
+
     .serviceDiv:hover .serviceTitle {
         transform: translate(-32%, -170%);
         font-size: 1.7em;
     }
 }
+
 @media screen and (max-width: 350px) {
     .containerWork {
         height: 130vh;
