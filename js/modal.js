@@ -52,7 +52,7 @@ const proyects = {
     btnFourth: {
         img: './video/evento.gif',
         title: 'Dreamed Day',
-        text: 'Sitio web creado para que el usuario pueda manejar una agenda de su boda. El sito consta de un registro de usurio y una agenda personalizada con cuatro secciones donde podrá manejar la lista de invitados, el presupuesto, una lista de tareas pendientes y proveedores. El proyecto fue desarrollado con <span class="spanTI">HTML, SASS, JavaScript vanilla y JQuery.</span>',
+        text: 'Sitio web creado para que el usuario pueda manejar una agenda de su boda. El sitio consta de un registro de usuario y una agenda personalizada con cuatro secciones donde podrá manejar la lista de invitados, el presupuesto, una lista de tareas pendientes y proveedores. El proyecto fue desarrollado con <span class="spanTI">HTML, SASS, JavaScript vanilla y JQuery.</span>',
         linkGitHub: 'https://github.com/MicaelaJofre/Eventos',
         linkWeb: 'https://micaelajofre.github.io/Eventos/'
     },
