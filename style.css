@@ -211,6 +211,10 @@ span {
     font-weight: 200;
 }
 
+.textAbout p {
+    margin-botton:2em;
+}
+
 .linkedin {
     text-decoration: none;
     font-weight: 600;
