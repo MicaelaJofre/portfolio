@@ -242,13 +242,6 @@ span {
     transform: scale(1.1);
 }
 
-.invertLogo {
-    -webkit-filter: invert(100%);
-    filter: invert(100%);
-    width: auto;
-    height: 52px;
-}
-
 .btnAbout {
     background: transparent;
     color: rgba(255, 255, 255, .7);
