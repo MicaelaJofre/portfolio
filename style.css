@@ -662,18 +662,22 @@ input::after {
     gap: 1em;
 }
 
-.social {
+.linkNetworkSocial {
+    display: block;
     border: solid 2px rgba(255, 255, 255, .3);
     display: flex;
     flex-direction: column;
     justify-content: start;
     text-align: center;
     padding: 2em 1em 1em 1em;
+    text-decoration: none;
+    color: rgba(255, 255, 255, .75);
+    transition: color ease-out .3s;
 }
 
-.linkNetworkSocial {
-    text-decoration: none;
-    color: rgba(255, 255, 255, .7);
+.linkNetworkSocial i {
+    font-size: 1.8em !important;
+    color: inherit !important;
 }
 
 .linkNetworkSocial:hover {
