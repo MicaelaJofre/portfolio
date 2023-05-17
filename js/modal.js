@@ -69,7 +69,7 @@ const proyects = {
         linkWeb: 'https://micaelajofre.github.io/ecommercejofre/'
     },
     btnSixth: {
-        img: './video/serviciosLibres.gif',
+        img: './video/ServiciosLibres.gif',
         title: 'Servicios Libres',
         text: 'App de servicios que facilita la conexión a consumidores con proveedores. Proporciona una interfaz dinámica y rápida, un diseño moderno y responsivo, seguridad y escalabilidad, y utiliza MongoDB como base de datos. <span class="spanTI">React, Next.js, Tailwind CSS, TypeScript, Express, Node.js y MongoDB.</span>',
         linkGitHub: 'https://github.com/MicaelaJofre/servicios-libres'
