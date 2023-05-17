@@ -2,6 +2,7 @@ const containerModal = document.getElementById("containerModal");
 const btnFirs = document.getElementById("btnFirs");
 const btnSecond = document.getElementById("btnSecond");
 const btnThird = document.getElementById("btnThird");
+const btnSixth = document.getElementById("btnSixth");
 const body = document.getElementById("body");
 
 let newProyect = document.createElement("div");
