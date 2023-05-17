@@ -27,6 +27,10 @@ btnFifth.addEventListener('click', (e) => {
     let name = e.target.id
     openModal(name)
 });
+btnSixth.addEventListener('click', (e) => {
+    let name = e.target.id
+    openModal(name)
+});
 
 
 const proyects = {
@@ -63,6 +67,12 @@ const proyects = {
         text: 'Ecommerce creado para la venta de productos del hogar y deco. El proyecto consta de varias secciones donde el usuario va a poder visualizar los distintos productos y en donde podrá filtrar según sus preferencias. En cada producto se podrá ingresar a un detalle con más información del mismo y proseguir con la compra. Además, incluye un carrito de compras y un formulario para agendar los datos de la compra realizada. El sitio web fue desarrollado con <span class="spanTI">React Js, CSS y Firebase.</span>',
         linkGitHub: 'https://github.com/MicaelaJofre/ecommercejofre',
         linkWeb: 'https://micaelajofre.github.io/ecommercejofre/'
+    },
+    btnSixth: {
+        img: './video/serviciosLibres.gif',
+        title: 'Servicios Libres',
+        text: 'App de servicios que facilita la conexión a consumidores con proveedores. Proporciona una interfaz dinámica y rápida, un diseño moderno y responsivo, seguridad y escalabilidad, y utiliza MongoDB como base de datos. <span class="spanTI">React, Next.js, Tailwind CSS, TypeScript, Express, Node.js y MongoDB.</span>',
+        linkGitHub: 'https://github.com/MicaelaJofre/servicios-libres'
     }
 }
 
