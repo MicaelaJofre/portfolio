@@ -449,6 +449,10 @@ li:nth-child(5) {
     background-size: cover;
 }
 
+li:nth-child(6) {
+    background: url(./img/servLibre.jpeg) top center no-repeat;
+    background-size: cover;
+}
 
 
 
@@ -482,6 +486,10 @@ ul li:nth-child(4)::before {
 
 ul li:nth-child(5)::before {
     background-color: rgba(255, 87, 34, .2)
+}
+
+ul li:nth-child(6)::before {
+    background-color: rgba(33, 150, 243, .25)
 }
 
 
