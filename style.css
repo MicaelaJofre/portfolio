@@ -414,7 +414,7 @@ li {
 
 li:hover,
 li:first-child~li:last-child {
-    width: 45%;
+    width: 35%;
     opacity: 1;
     transition: all .5s ease-in-out;
 }
